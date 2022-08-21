@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "description": "Unofficial Next.js + Typescript + Tailwind CSS starter with a latest package",
   "author": "Danang Eko Alfianto <github.com/danangekal>",
-  "homepage": "https://github.com/danangekal/next-typescript-tailwind-starter#readme",
+  "homepage": "https://github.com/june50232/next-typescript-tailwind-starter",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danangekal/next-typescript-tailwind-starter.git"
+    "url": "git+https://github.com/june50232/next-typescript-tailwind-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/danangekal/next-typescript-tailwind-starter/issues"
+    "url": "https://github.com/june50232/next-typescript-tailwind-starter/issues"
   },
   "license": "MIT",
   "keywords": [
