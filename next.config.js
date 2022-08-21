@@ -1,4 +1,8 @@
 module.exports = {
+  images: {
+    loader: 'akamai',
+    path: '/',
+  },
   assetPrefix: ".",
   webpackDevMiddleware: config => {
     config.watchOptions = {
