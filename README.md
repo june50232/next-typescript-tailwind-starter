@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Dockerized [Next.js](https://nextjs.org/) project.
 
 ## Demo
 
@@ -9,9 +9,7 @@ You can check [demo](https://next-typescript-tailwind-starter.vercel.app/)
 - [React.js 17](https://reactjs.org/blog/2020/10/20/react-v17.html) - Blog introduce react v17.0.
 - [Next.js 12](https://nextjs.org/blog/next-12) - Blog introduce next.js 11.
 - [Typescript 4](https://www.typescriptlang.org/) - Documentation of typescript.
-- [Next PWA 5](https://www.npmjs.com/package/next-pwa) - Documentation of next pwa.
 - [Tailwind CSS 3](https://tailwindcss.com/docs/) - Documentation of tailwind css.
-- [Next PWA 5](https://www.npmjs.com/package/next-pwa) - Documentation of next pwa.
 - [Docker](https://docs.docker.com/) - Documentation of Docker.
 - [Eslint 7](https://eslint.org/docs/user-guide/getting-started) - Documentation of eslint.
 - [Prettier 2](https://prettier.io/docs/en/index.html) - Documentation of prettier.
@@ -22,59 +20,20 @@ You can check [demo](https://next-typescript-tailwind-starter.vercel.app/)
 
 This project using node >= 12.13.0 & yarn
 
-### Installation
+#### Docker Compose Hot Reload
 
 ```bash
-git clone https://github.com/danangekal/next-typescript-tailwind-starter.git
-yarn install
+docker-compose up -d --build
 ```
 
-#### Development
+#### Docker Debug
 
 ```bash
-yarn dev
+docker create --name="tmp_$$" image:tag
+docker export tmp_$$ | tar t
+docker rm tmp_$$
 ```
 
-#### Production
-
-```bash
-npm run build or yarn build
-yarn start
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-#### Docker Build
-
-```bash
-docker build -t next-typescript-tailwind-starter .
-```
-
-#### Docker Run
-
-```bash
-docker run --rm -it -p 3000:3000 next-typescript-tailwind-starter
-```
-
-#### Docker Compose
-
-```bash
-docker-compose up
-```
-
-#### Docker Images
-
-You can use images available on docker hub [next-typescript-tailwind-starter](https://hub.docker.com/r/danangekal/next-typescript-tailwind-starter).
-
-```bash
-docker pull danangekal/next-typescript-tailwind-starter
-```
 
 ## Learn More
 
@@ -85,12 +44,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Github page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+It's easy to use the Github Actions to publish on [Gitbub Page](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
 ---
 
-Copyright © 2021 by Danang Eko Alfianto
+Copyright © 2022 by June

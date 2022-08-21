@@ -1,8 +1,11 @@
-const withPWA = require('next-pwa');
-
-module.exports = withPWA({
-  pwa: {
-    disable: process.env.NODE_ENV === 'development',
-    dest: 'public',
+module.exports = {
+  assetPrefix: ".",
+  webpackDevMiddleware: config => {
+    config.watchOptions = {
+      poll: 1000,
+      aggregateTimeout: 300,
+    }
+    return config
   },
-});
+  output: 'standalone',
+};
