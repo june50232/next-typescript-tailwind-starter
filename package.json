@@ -2,7 +2,7 @@
   "name": "next-typescript-tailwind-starter",
   "version": "0.1.0",
   "description": "Unofficial Next.js + Typescript + Tailwind CSS starter with a latest package",
-  "author": "Danang Eko Alfianto <github.com/danangekal>",
+  "author": "June C <github.com/june50232>",
   "homepage": "https://github.com/june50232/next-typescript-tailwind-starter",
   "repository": {
     "type": "git",
@@ -58,7 +58,4 @@
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   },
-  "engines": {
-    "node": ">=12.13.0"
-  }
 }
