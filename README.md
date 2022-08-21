@@ -1,4 +1,4 @@
-This is a Dockerized [Next.js](https://nextjs.org/) project.
+This is a Dockerized [Next.js](https://nextjs.org/) project with `Github Actions` and `Githib pages` settings.
 
 ## Demo
 
