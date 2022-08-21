@@ -2,7 +2,7 @@ This is a Dockerized [Next.js](https://nextjs.org/) project.
 
 ## Demo
 
-You can check [demo](https://next-typescript-tailwind-starter.vercel.app/)
+You can check [demo](https://june50232.github.io/next-typescript-tailwind-starter/)
 
 ## Features
 
@@ -33,7 +33,6 @@ docker create --name="tmp_$$" image:tag
 docker export tmp_$$ | tar t
 docker rm tmp_$$
 ```
-
 
 ## Learn More
 
